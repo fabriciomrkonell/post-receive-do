@@ -1,0 +1,6 @@
+git --work-tree=/var/www/site.com --git-dir=/var/repo/site.git checkout -f
+export PORT=80
+export DEVELOPMENT=PRODUCTION
+cd /var/www/site.com
+sudo npm install
+pm2 restart 0
